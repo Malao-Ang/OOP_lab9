@@ -31,6 +31,8 @@ public class App
         map.add(tree9);
         map.add(tree10);
         map.add(robot);
+        robot.setXY(7,5);
+        robot.setXY(15,15);
         map.print();
         map.printUnit();
         

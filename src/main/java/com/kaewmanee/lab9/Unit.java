@@ -17,11 +17,22 @@ public class Unit {
     public boolean isOn(int x,int y) { //อยู่ยน xyนี่ใช่ั้น:ใช่
         return this.x == x && this.y == y;
     }
+    public boolean setXY(int x, int y) {
+        if(!map.isOn(x,y)) return false;
+        if(map.hasDominate(x, y)) return false;
+        this.x = x;
+        this.y = y;
+        return true;
+    }
     public boolean setX(int x) {
+        if(!map.isOn(x,y)) return false;
+        if(map.hasDominate(x, y)) return false;
         this.x = x;
         return true;
     }
     public boolean setY(int y) {
+        if(!map.isOn(x,y)) return false;
+        if(map.hasDominate(x, y)) return false;
         this.y = y;
         return true;
     }

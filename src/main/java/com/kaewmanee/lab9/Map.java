@@ -49,4 +49,22 @@ public class Map {
             System.out.println(this.units[i]);
         }
     }
+    public boolean isOn(int x,int y){
+        return isInWidth(x) && isInHeight(y);
+    }
+    public boolean isInWidth(int x){
+        return x>=0 && x <width;
+    }
+    public boolean isInHeight(int y){
+        return y >=0 && y <height;
+    }
+    public boolean hasDominate(int x,int y){
+        for(int i=0;i<unitCount;i++){
+            Unit unit = this.units[i];
+            if(unit.isDominated() && unit.isOn(x,y)){
+                return true;
+            }
+        }
+        return false;
+    }
 }
