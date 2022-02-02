@@ -9,7 +9,7 @@ public class App
     public static void main( String[] args )
     {
         Map map = new Map();
-        Unit robot = new Unit(map,'A',10,10,false);
+        Unit robot = new Unit(map,'A',15,15,false);
         Unit tree1 = new Unit(map,'T',5,5,true);
         Unit tree2 = new Unit(map,'T',5,6,true);
         Unit tree3 = new Unit(map,'T',6,5,true);
