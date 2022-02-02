@@ -6,7 +6,7 @@ public class Unit {
     private Map map;
     private boolean dominate;
     private char symbol;
-    public Unit(Map map,int x,int y,boolean dominate) {
+    public Unit(Map map,char symbol,int x,int y,boolean dominate) {
         this.x = x;
         this.y = y;
         this.map = map;
@@ -35,7 +35,7 @@ public class Unit {
         return  dominate;
     }
     public String toString() {
-        return "Unit("+this.symbol+") [" +this.x+" ,"+this.y+"]";
+        return "Unit("+this.symbol+") [" +this.x+" ,"+this.y+"] is on"+ map;//map.toString();
     }
     
     
