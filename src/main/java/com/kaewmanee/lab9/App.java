@@ -20,15 +20,11 @@ public class App
         Unit tree8 = new Unit(map,'T',11,10,true);
         Unit tree9 = new Unit(map,'T',11,12,true);
         Unit tree10 = new Unit(map,'T',12,10,true);
+        map.add(tree1);
+        map.add(tree2);
+        map.add(robot);
         map.print();
-        System.out.println(robot);
-        System.out.println(tree1);
-        System.out.println(tree2);
-        System.out.println(tree3);
-        System.out.println(tree4);
-        System.out.println(tree5);
-        System.out.println(tree6);
-        System.out.println(tree7);
-        System.out.println( map);
+        map.printUnit();
+        
     }
 }

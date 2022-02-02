@@ -31,7 +31,10 @@ public class Map {
         if(unitCount==(width*height)) return;
         this.units[unitCount] = unit;
         unitCount++;
-
-
+    }
+    public void printUnit(){
+        for(int i=0;i<unitCount;i++){
+            System.out.println(this.units[i]);
+        }
     }
 }
