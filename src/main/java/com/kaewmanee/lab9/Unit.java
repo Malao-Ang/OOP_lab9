@@ -31,6 +31,12 @@ public class Unit {
     public int getY() {
         return y ;
     }
+    public boolean isDominated() {
+        return  dominate;
+    }
+    public String toString() {
+        return "Unit("+this.symbol+") [" +this.x+" ,"+this.y+"]";
+    }
     
     
     
