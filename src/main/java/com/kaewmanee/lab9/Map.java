@@ -6,10 +6,12 @@ public class Map {
     //Create Array unit
     private Unit units[];
     private int unitCount;
-    
+
     public Map(int width,int height) {
         this.width = width;
         this.height = height;
+        this.units = new Unit[width *height];
+        this.unitCount =0;
     }
     public Map(){
         this(10,10);
@@ -24,5 +26,12 @@ public class Map {
     }
     public String toString(){
         return "Map ("+this.width+","+this.height+")";
+    }
+    public void add(Unit unit){
+        if(unitCount==(width*height)) return;
+        this.units[unitCount] = unit;
+        unitCount++;
+
+
     }
 }
