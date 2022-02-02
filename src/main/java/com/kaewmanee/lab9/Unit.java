@@ -37,6 +37,9 @@ public class Unit {
     public String toString() {
         return "Unit("+this.symbol+") [" +this.x+" ,"+this.y+"] is on"+ map;//map.toString();
     }
+    public char getSymbol() {
+        return symbol;
+    }
     
     
     

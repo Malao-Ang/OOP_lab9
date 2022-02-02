@@ -17,13 +17,25 @@ public class Map {
         this(10,10);
     }
     public void print(){
-        for(int i = 0; i <this.width; i++){
-            for(int j = 0; j <this.height; j++){
-                System.out.print("-");
+        for(int y = 0; y <this.width; y++){
+            for(int x = 0; x <this.height; x++){
+                printBlock(x,y);
             }
             System.out.println();
         }
     }
+
+    private void printBlock(int x,int y){
+        for(int i = 0; i <unitCount;i++) {
+            Unit unit = this.units[i];
+            if(unit.isOn(x,y)){
+                System.out.print(unit.getSymbol());
+                return ;
+            }
+        }
+        System.out.print("-");
+    }
+
     public String toString(){
         return "Map ("+this.width+","+this.height+")";
     }

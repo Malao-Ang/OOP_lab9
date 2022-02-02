@@ -8,8 +8,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        Map map = new Map();
-        Unit robot = new Unit(map,'A',15,15,false);
+        Map map = new Map(15,15);
+        Unit robot = new Unit(map,'A',10,10,false);
         Unit tree1 = new Unit(map,'T',5,5,true);
         Unit tree2 = new Unit(map,'T',5,6,true);
         Unit tree3 = new Unit(map,'T',6,5,true);
@@ -22,6 +22,14 @@ public class App
         Unit tree10 = new Unit(map,'T',12,10,true);
         map.add(tree1);
         map.add(tree2);
+        map.add(tree3);
+        map.add(tree4);
+        map.add(tree5);
+        map.add(tree6);
+        map.add(tree7);
+        map.add(tree8);
+        map.add(tree9);
+        map.add(tree10);
         map.add(robot);
         map.print();
         map.printUnit();
