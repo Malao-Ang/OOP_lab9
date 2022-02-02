@@ -11,8 +11,8 @@ public class Map {
         this(10,10);
     }
     public void print(){
-        for(int i = 0; i <width; i++){
-            for(int j = 0; j <height; j++){
+        for(int i = 0; i <this.width; i++){
+            for(int j = 0; j <this.height; j++){
                 System.out.print("-");
             }
             System.out.println();
