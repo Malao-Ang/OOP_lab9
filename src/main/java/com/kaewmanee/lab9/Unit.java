@@ -14,8 +14,25 @@ public class Unit {
         this.symbol = symbol;
 
     }
-    public boolean isOn(int x,int y) {
+    public boolean isOn(int x,int y) { //อยู่ยน xyนี่ใช่ั้น:ใช่
         return this.x == x && this.y == y;
     }
+    public boolean setX(int x) {
+        this.x = x;
+        return true;
+    }
+    public boolean setY(int y) {
+        this.y = y;
+        return true;
+    }
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y ;
+    }
+    
+    
+    
     
 }
